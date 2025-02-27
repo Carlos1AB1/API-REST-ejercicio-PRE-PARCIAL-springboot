@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "59c93891-996e-4c7d-b995-880659a10c56",
+		"name": "Parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41867631"
+	},
+	"item": [
+		{
+			"name": "job management",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Laptop HP\",\r\n    \"descripcion\": \"Laptop HP Pavilion con 16GB RAM y 512GB SSD\",\r\n    \"precio\": 899.99,\r\n    \"stock\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "job management",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Laptop HP\",\r\n    \"descripcion\": \"Laptop HP Pavilion con 16GB RAM y 512GB SSD\",\r\n    \"precio\": 899.99,\r\n    \"stock\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "job management",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titulo\": \"Desarrollador Backend AAAAAAAAA\",\r\n  \"descripcion\": \"Sea busca desarrollador backend con experiencia en Spring Boot y bases de datos relacionales.\",\r\n  \"salarioMin\": 400200,\r\n  \"salarioMax\": 600200,\r\n  \"requisitos\": \"Expeariencia con Java, Spring Boot, SQL.\",\r\n  \"tipoJornada\": \"Tiemapo completo\",\r\n  \"modalidad\": \"Remaoto\",\r\n  \"ubicacion\": \"Ciuadad de México\",\r\n  \"fechaPublicacion\": \"2025-01-27\",\r\n  \"fechaExpiracion\": \"2025-05-27\",\r\n  \"estado\": \"Activaa\",\r\n  \"empresa\": {\r\n    \"id\": 2\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ofertas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ofertas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "job management",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titulo\": \"Desarrollador Backend AAAAAAAAA\",\r\n  \"descripcion\": \"Sea busca desarrollador backend con experiencia en Spring Boot y bases de datos relacionales.\",\r\n  \"salarioMin\": 400200,\r\n  \"salarioMax\": 600200,\r\n  \"requisitos\": \"Expeariencia con Java, Spring Boot, SQL.\",\r\n  \"tipoJornada\": \"Tiemapo completo\",\r\n  \"modalidad\": \"Remaoto\",\r\n  \"ubicacion\": \"Ciuadad de México\",\r\n  \"fechaPublicacion\": \"2025-01-27\",\r\n  \"fechaExpiracion\": \"2025-05-27\",\r\n  \"estado\": \"Activaa\",\r\n  \"empresa\": {\r\n    \"id\": 2\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/postulaciones/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"postulaciones",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
